@@ -1,3 +1,5 @@
+## Neural SINDy
+
 This repo contains a Neural SINDy architecture for identification of nonlinear dynamics, which I wrote in early 2023.
 
 While I initially developed the idea of implementing SINDy as a neural network independently, I later discovered similar concepts had already appeared in the literature.
@@ -5,6 +7,8 @@ As a result, I did not publish this work.
 
 This repo contains a single ipynb file, for easier experimentation, which includes an implementation of the algorithm, and experiments with a simple 2D ODE,
 the Lorenz system (a chaotic 3D ODE), and a system with sinusoidal forcing.
+
+--
 
 Among the improvements to the SINDy algorithm are:
 - A neural-network architecture (can automatically find constants and learn more complicated dynamics).
