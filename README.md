@@ -8,7 +8,7 @@ As a result, I did not publish this work.
 This repo contains a single ipynb file, for easier experimentation, which includes an implementation of the algorithm, and experiments with a simple 2D ODE,
 the Lorenz system (a chaotic 3D ODE), and a system with sinusoidal forcing.
 
---
+---
 
 Among the improvements to the SINDy algorithm are:
 - A neural-network architecture (can automatically find constants and learn more complicated dynamics).
