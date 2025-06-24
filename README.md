@@ -10,6 +10,8 @@ low-dimensional models of the system's underlying dynamics. The original SINDy p
 I independently developed the idea of implementing SINDy as a neural network and wrote this code in early 2023, but later discovered a similar
 work had already appeared in the literature. As a result, I did not publish this work.
 
+---
+
 The algorithm work as follows:
   - We have several neural network layers, implementing different function primitives, including a masked linear layer, with the mask allowing us to implement a form of pruning, and a multiplicative (Hadamard) layer that allows us to combine linear layers into higher-order polynomials.
   - We train the network until convergence, and then prune the least important weight, i.e the weight that, when removed, has the least impact on worsening the performance of the trained model.
