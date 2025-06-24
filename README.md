@@ -5,8 +5,8 @@ This repo contains a Neural SINDy architecture for identification of nonlinear d
 While I initially developed the idea of implementing SINDy as a neural network independently, I later discovered similar concepts had already appeared in the literature.
 As a result, I did not publish this work.
 
-This repo contains a single ipynb file, for easier experimentation, which includes an implementation of the algorithm, and experiments with a simple 2D ODE,
-the Lorenz system (a chaotic 3D ODE), and a system with sinusoidal forcing.
+This repo contains a single ipynb file, for easier experimentation, which includes an implementation of the algorithm, functions for tracking learning & pruning, and
+experiments with a simple 2D ODE, the Lorenz system (a chaotic 3D ODE), and a system with sinusoidal forcing.
 
 ---
 
