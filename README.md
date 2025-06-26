@@ -43,12 +43,12 @@ Among our improvements to the SINDy algorithm are:
 
 The major advantage of our approach is that we can represent exponentially many terms with a quadratic number of parameters. In particular, suppose that the inputs \( x \in \mathbb{R}^n \).
 The number of polynomial terms of order $p$ is 
-$$ \binom{n + p - 1}{p}. $$
+$\binom{n + p - 1}{p}.$
 Hence, the number of polynomial terms of order $p$ or less is 
-$$ \sum_{k=0}^p \binom{n + k - 1}{k} = \frac{1}{n} (p + 1) \binom{n + p}{p + 1} \sim O(p n^p) $$
-(for large $n$), which we can represent with as few as \( p (n + 1) \) parameters using a multi-layer architecture.
+$\sum_{k=0}^p \binom{n + k - 1}{k} = \frac{1}{n} (p + 1) \binom{n + p}{p + 1} \sim O(p n^p)$
+(for large $n$), which we can represent with as few as \(p(n + 1) \) parameters using a multi-layer architecture.
 We can represent $m$ such terms with at worst 
-$$ m p (n + 1) $$
+$mp(n + 1)$
 parameters. (At worst, because if any of these terms involve one of the other terms, we get it for free.)
 A reasonable sparsity assumption is that the number of active terms is linear in the number of dimensions, i.e., \( m = O(n) \), in which case we need \( O(n^2 p) \) parameters.
 Hence, we beat regular SINDy for \( p > 2 \).
